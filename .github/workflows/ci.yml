@@ -1,0 +1,30 @@
+name: Software checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+          cache: pip
+      - run: python -m pip install -r requirements-lock.txt
+      - run: python -m pip install --no-deps --no-build-isolation -e .
+      - run: ruff check .
+      - run: ruff format --check src tests
+      - run: pytest -q
+      - run: python -m build --no-isolation
+      - name: Verify missing-data failure
+        shell: bash
+        run: |
+          set +e
+          cardio-research --data data/heart.csv > missing-data.log 2>&1
+          code=$?
+          set -e
+          test "$code" -eq 2
+          grep -q 'Dataset not found' missing-data.log

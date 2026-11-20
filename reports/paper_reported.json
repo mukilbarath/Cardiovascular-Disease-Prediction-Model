@@ -1,0 +1,11 @@
+{
+  "status": "paper_reported_not_reproduced",
+  "source": "Owner-supplied PDF, page 4, Results and Discussion and Figure 6",
+  "accuracy_percent": 98.05,
+  "test_samples": 205,
+  "labels": [0, 1],
+  "matrix_orientation": "rows actual, columns predicted",
+  "confusion_matrix": [[98, 2], [2, 103]],
+  "reported_classwise_precision_recall_f1": 0.98,
+  "original_dataset_available": false
+}
