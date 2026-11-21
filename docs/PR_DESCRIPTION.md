@@ -23,7 +23,7 @@ Adds fold-local preprocessing, pinned dependencies, data/provenance checks, mode
 
 **Door:** two-way
 
-Changes can be reverted; the original script remains archived. Owner review is required before merge/release. No data, PDF, license grant, invented DOI/venue, or fitted model is included.
+Changes can be reverted; the original script remains archived. Owner review is required before merge/release. The MIT license covers repository code and documentation only; no data, PDF, invented DOI/venue, or fitted model is included.
 
 **Blast Radius:** research-workflow
 

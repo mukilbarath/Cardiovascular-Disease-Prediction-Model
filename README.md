@@ -72,4 +72,4 @@ The owner reports that the work was published. The supplied PDF does not establi
 
 Exact dataset identity, patient grouping, dependency versions used for the paper, and some model defaults remain unknown. Duplicate rows or repeated patients may inflate row-split performance. There is no external, prospective, fairness or clinical validation. Do not use this repository for diagnosis or treatment decisions.
 
-No license was present in the original repository, and this change does not grant one. The owner must choose a code license and confirm dataset and paper redistribution rights. See [contribution guidance](CONTRIBUTING.md).
+The code is released under the [MIT License](LICENSE). The license applies to the repository's original code and documentation; it does not grant rights to third-party datasets or the paper. Confirm dataset and paper redistribution rights separately. See [contribution guidance](CONTRIBUTING.md).
